@@ -24,7 +24,8 @@ public class TodoController {
         this.todoser = todoser;
     }
 
-    @PostMapping("/CreateTodo")
+    @PostMapping("/createTodo")
+    
     public TodoModel createTodo(@RequestBody TodoModel task) {
         return todoser.createTodo(task);
     }
